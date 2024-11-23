@@ -143,6 +143,6 @@ await app.delete("/api/armazem/:id", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Servidor rodando em http://127.0.0.1:${PORT}`);
 });
