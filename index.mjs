@@ -5,7 +5,7 @@ import { MongoClient, ObjectId, ServerApiVersion } from "mongodb";
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT | 8000;
 const ARMAZEM = "armazem_database";
 const COLLECTION = "armazem";
 
