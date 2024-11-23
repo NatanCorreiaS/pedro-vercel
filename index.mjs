@@ -36,6 +36,11 @@ run().catch(console.dir);
 
 app.use(express.json());
 
+// GET TESTE
+await app.get("/", (req, res) => {
+  res.send("API de Armazem");
+});
+
 // GET ALL
 await app.get("/api/armazem", async (req, res) => {
   try {
